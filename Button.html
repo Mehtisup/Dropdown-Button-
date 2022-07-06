@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>$UP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing:border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.content {
+    position:relative;
+    display:inline-block;
+}
+.btn {
+    background-color: rgb(11, 126, 64);
+    color:white;
+    font-size: 24px;
+    cursor:pointer;
+    padding: 10px;
+    outline:border;
+    border:none;
+    cursor:pointer;
+    width: 120px;
+}
+.btn:hover {
+    background-color: rgb(255, 49, 49);
+}
+.list {
+    position:absolute;
+    min-width:180px;
+    background-color:gray;
+    overflow:auto;
+    scroll-behavior: none;
+    transition: 0.5s;
+    height: 0;
+    z-index: 99;
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list a {
+    display: block;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    padding:10px;
+    text-decoration:none;
+}
+.list a:hover {
+    background-color: black;
+}
+.show {
+    height:172px;
+    scroll-behavior: none;;
+    overflow-y: none;
+    transition: 0.5s;
+}
+h1 {
+    color: brown;
+    text-align: center;
+}
+</style>
+    </head>
+    <body>
+        <div class="content">
+            <button type="button" class="btn" onclick="myFunction()">City</button>
+            <div class="list" id="item">
+                <a href="#">New York</a>
+                <a href="#">California</a>
+                <a href="#">Los Angles</a>
+                <a href="#">Chicago</a>
+            </div>
+        </div>
+<script>
+function myFunction() {
+    document.getElementById("item").classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+        var Ls = document.getElementsByClassName("list");
+        var i;
+        for (i = 0 ; i < Ls.length ; i++) {
+            var Sh = Ls[i];
+            if (Sh.classList.contains('show')) {
+                Sh.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+<h1>HELLO WORLD</h1>
+    </body>
+</html>
